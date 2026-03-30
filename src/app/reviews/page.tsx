@@ -38,18 +38,16 @@ export default function ReviewsPage() {
           Demo page: synthesise real quotes from Checkatrade / Book-a-Plumber when pitching — here we show thematic clusters instead
           of fake star ratings.
         </p>
-        <ul className="mt-8 space-y-4">
+        <ul className="mt-8 space-y-5">
           {themes.map(({ label, detail, Icon }) => (
-            <li
-              key={label}
-              className="flex gap-4 rounded-xl border border-slate-200 bg-white px-4 py-4 shadow-sm">
-              <div className="mt-0.5 shrink-0 text-[var(--accent)]" aria-hidden>
-                <Icon className="h-7 w-7" strokeWidth={1.6} />
+            <li key={label} className="relative pl-20">
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 text-[var(--accent)]" aria-hidden>
+                <Icon className="h-14 w-14" strokeWidth={1.5} />
               </div>
-              <div className="min-w-0">
+              <article className="rounded-xl border border-slate-200 bg-white px-4 py-4 shadow-sm">
                 <p className="font-semibold text-[var(--navy)]">{label}</p>
                 <p className="mt-1 text-sm text-[var(--muted)]">{detail}</p>
-              </div>
+              </article>
             </li>
           ))}
         </ul>

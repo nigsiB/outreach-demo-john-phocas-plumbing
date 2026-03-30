@@ -45,8 +45,8 @@ export default function Page() {
           </div>
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-slate-200 shadow-lg">
             <Image
-              src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=2400&q=90"
-              alt="Plumber fitting pipework in a bright, modern kitchen"
+              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=2400&q=90"
+              alt="Plumber working under a kitchen sink in a modern home"
               fill
               className="object-cover object-center"
               sizes="(min-width: 1024px) 42vw, 100vw"

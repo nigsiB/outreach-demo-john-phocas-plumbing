@@ -37,21 +37,19 @@ export default function ServicesPage() {
         <p className="mt-3 text-[var(--muted)]">
           Structured as scannable cards instead of a long essay — different hierarchy to the homepage hero.
         </p>
-        <div className="mt-8 space-y-4">
+        <ul className="mt-8 space-y-5">
           {blocks.map(({ title, body, Icon }) => (
-            <article
-              key={title}
-              className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="mt-0.5 shrink-0 text-[var(--navy)]" aria-hidden>
-                <Icon className="h-7 w-7" strokeWidth={1.6} />
+            <li key={title} className="relative pl-20">
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 text-[var(--accent)]" aria-hidden>
+                <Icon className="h-14 w-14" strokeWidth={1.5} />
               </div>
-              <div className="min-w-0">
+              <article className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <h2 className="text-lg font-semibold text-[var(--navy)]">{title}</h2>
                 <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">{body}</p>
-              </div>
-            </article>
+              </article>
+            </li>
           ))}
-        </div>
+        </ul>
       </main>
     </>
   );
